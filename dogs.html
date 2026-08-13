@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Adopt a Dog | Pawsite Future</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Skip Link -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+            <div class="container">
+
+                <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+                    <span class="logo-paw">
+                        <i class="fa-solid fa-paw" aria-hidden="true"></i>
+                    </span>
+                    Pawsite Future
+                </a>
+
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#main-navigation"
+                    aria-controls="main-navigation"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="main-navigation">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="dog.html">
+                                Adopt a Dog
+                            </a>
+                        </li>
+
+                        <li class="nav-item mt-2 mt-lg-0">
+                            <a class="btn btn-primary find-friend-btn" href="#dogs">
+                                Find a Friend
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <main id="main-content">
+
+        <!-- SECTION 1: HERO -->
+        <section class="hero-section text-center">
+            <div class="container py-5 py-lg-6">
+
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-9">
+
+                        <p class="eyebrow">AVAILABLE FOR ADOPTION</p>
+
+                        <h1 class="display-3 fw-bold mb-4">
+                            Meet Your New
+                            <span>Best Friend.</span>
+                        </h1>
+
+                        <p class="lead mx-auto">
+                            Explore our wonderful dogs and find a companion
+                            who could become part of your family.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- SECTION 2: SEARCH -->
+        <section class="how-it-works py-5">
+            <div class="container">
+
+                <div class="row justify-content-center">
+                    <div class="col-12 col-xl-10">
+
+                        <div class="search-panel p-4 p-lg-5">
+
+                            <div class="text-center mb-4">
+                                <p class="eyebrow">SEARCH OUR DOGS</p>
+                                <h2 class="display-6 fw-bold">
+                                    Find Your Perfect Match
+                                </h2>
+                            </div>
+
+                            <div class="row g-3">
+
+                                <div class="col-12 col-md-6 col-lg-3">
+                                    <label for="searchInput" class="visually-hidden">
+                                        Search by name
+                                    </label>
+                                    <input class="form-control"
+                                        id="searchInput"
+                                        type="text"
+                                        placeholder="Search by name">
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-3">
+                                    <label for="breedFilter" class="visually-hidden">
+                                        Filter by breed
+                                    </label>
+                                    <select class="form-select" id="breedFilter">
+                                        <option value="all">All Breeds</option>
+                                        <option value="labrador">Labrador</option>
+                                        <option value="husky">Husky</option>
+                                        <option value="golden">Golden Retriever</option>
+                                        <option value="beagle">Beagle</option>
+                                        <option value="german">German Shepherd</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-2">
+                                    <label for="ageFilter" class="visually-hidden">
+                                        Filter by age
+                                    </label>
+                                    <select class="form-select" id="ageFilter">
+                                        <option value="all">Any Age</option>
+                                        <option value="young">Young</option>
+                                        <option value="adult">Adult</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-2">
+                                    <label for="sizeFilter" class="visually-hidden">
+                                        Filter by size
+                                    </label>
+                                    <select class="form-select" id="sizeFilter">
+                                        <option value="all">Any Size</option>
+                                        <option value="small">Small</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="large">Large</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12 col-lg-2">
+                                    <button class="btn btn-primary w-100 h-100"
+                                        id="searchButton"
+                                        type="button">
+                                        Search
+                                    </button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- SECTION 3: DOGS -->
+        <section class="featured-dogs py-5 py-lg-6" id="dogs">
+            <div class="container">
+
+                <div class="row justify-content-center text-center mb-5">
+                    <div class="col-12 col-lg-8">
+                        <p class="eyebrow">AVAILABLE NOW</p>
+                        <h2 class="display-5 fw-bold">Meet Our Dogs</h2>
+                    </div>
+                </div>
+
+                <div class="row g-4" id="dogGrid">
+
+                    <!-- BUDDY -->
+                    <div class="col-12 col-md-6 col-lg-4 dog-item"
+                        data-name="buddy"
+                        data-breed="labrador"
+                        data-age="young"
+                        data-size="medium">
+
+                        <article class="card dog-card h-100">
+                            <img
+                                src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=800&q=90"
+                                srcset="
+                                    https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=400&q=80 400w,
+                                    https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=800&q=90 800w
+                                "
+                                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                                class="card-img-top"
+                                alt="Buddy, a friendly Labrador">
+
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h3 class="card-title">Buddy</h3>
+                                    <span class="dog-gender">MALE</span>
+                                </div>
+
+                                <p class="card-text">
+                                    Friendly, playful and always ready to make a new best friend.
+                                </p>
+
+                                <div class="mb-3">
+                                    <span class="badge">Labrador</span>
+                                    <span class="badge">Young</span>
+                                    <span class="badge">Medium</span>
+                                </div>
+
+                                <button class="btn btn-dark w-100 mt-auto meet-button"
+                                    type="button"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#dogModal"
+                                    data-name="Buddy"
+                                    data-description="Buddy is friendly, playful and always ready to make a new best friend."
+                                    data-image="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=1200&q=90">
+                                    Meet Buddy
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+
+
+                    <!-- LUNA -->
+                    <div class="col-12 col-md-6 col-lg-4 dog-item"
+                        data-name="luna"
+                        data-breed="husky"
+                        data-age="young"
+                        data-size="medium">
+
+                        <article class="card dog-card h-100">
+                            <img
+                                src="https://images.unsplash.com/photo-1605568427561-40dd23c2acea?auto=format&fit=crop&w=800&q=90"
+                                srcset="
+                                    https://images.unsplash.com/photo-1605568427561-40dd23c2acea?auto=format&fit=crop&w=400&q=80 400w,
+                                    https://images.unsplash.com/photo-1605568427561-40dd23c2acea?auto=format&fit=crop&w=800&q=90 800w
+                                "
+                                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                                class="card-img-top"
+                                alt="Luna, an energetic Husky">
+
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h3 class="card-title">Luna</h3>
+                                    <span class="dog-gender">FEMALE</span>
+                                </div>
+
+                                <p class="card-text">
+                                    Gentle, energetic and happiest when exploring with her family.
+                                </p>
+
+                                <div class="mb-3">
+                                    <span class="badge">Husky</span>
+                                    <span class="badge">Young</span>
+                                    <span class="badge">Medium</span>
+                                </div>
+
+                                <button class="btn btn-dark w-100 mt-auto meet-button"
+                                    type="button"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#dogModal"
+                                    data-name="Luna"
+                                    data-description="Luna is gentle, energetic and happiest when exploring with her family."
+                                    data-image="https://images.unsplash.com/photo-1605568427561-40dd23c2acea?auto=format&fit=crop&w=1200&q=90">
+                                    Meet Luna
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+
+
+                    <!-- MAX -->
+                    <div class="col-12 col-md-6 col-lg-4 dog-item"
+                        data-name="max"
+                        data-breed="golden"
+                        data-age="adult"
+                        data-size="large">
+
+                        <article class="card dog-card h-100">
+                            <img
+                                src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=800&q=90"
+                                srcset="
+                                    https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=400&q=80 400w,
+                                    https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=800&q=90 800w
+                                "
+                                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                                class="card-img-top"
+                                alt="Max, a loving Golden Retriever">
+
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h3 class="card-title">Max</h3>
+                                    <span class="dog-gender">MALE</span>
+                                </div>
+
+                                <p class="card-text">
+                                    Loving and affectionate with a calm personality and a big heart.
+                                </p>
+
+                                <div class="mb-3">
+                                    <span class="badge">Golden Retriever</span>
+                                    <span class="badge">Adult</span>
+                                    <span class="badge">Large</span>
+                                </div>
+
+                                <button class="btn btn-dark w-100 mt-auto meet-button"
+                                    type="button"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#dogModal"
+                                    data-name="Max"
+                                    data-description="Max is loving and affectionate with a calm personality and a big heart."
+                                    data-image="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=1200&q=90">
+                                    Meet Max
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+
+
+                    <!-- BAILEY -->
+                    <div class="col-12 col-md-6 col-lg-4 dog-item"
+                        data-name="bailey"
+                        data-breed="beagle"
+                        data-age="young"
+                        data-size="small">
+
+                        <article class="card dog-card h-100">
+                            <img
+                                src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&w=800&q=90"
+                                srcset="
+                                    https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&w=400&q=80 400w,
+                                    https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&w=800&q=90 800w
+                                "
+                                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                                class="card-img-top"
+                                alt="Bailey, a sweet Beagle">
+
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h3 class="card-title">Bailey</h3>
+                                    <span class="dog-gender">FEMALE</span>
+                                </div>
+
+                                <p class="card-text">
+                                    Sweet, curious and full of personality. She loves playtime and attention.
+                                </p>
+
+                                <div class="mb-3">
+                                    <span class="badge">Beagle</span>
+                                    <span class="badge">Young</span>
+                                    <span class="badge">Small</span>
+                                </div>
+
+                                <button class="btn btn-dark w-100 mt-auto meet-button"
+                                    type="button"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#dogModal"
+                                    data-name="Bailey"
+                                    data-description="Bailey is sweet, curious and full of personality. She loves playtime and attention."
+                                    data-image="https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&w=1200&q=90">
+                                    Meet Bailey
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+
+
+                    <!-- KODI -->
+                    <div class="col-12 col-md-6 col-lg-4 dog-item"
+                        data-name="kodi"
+                        data-breed="husky"
+                        data-age="adult"
+                        data-size="large">
+
+                        <article class="card dog-card h-100">
+                            <img
+                                src="https://images.unsplash.com/photo-1547407139-3c921a66005c?auto=format&fit=crop&w=800&q=90"
+                                srcset="
+                                    https://images.unsplash.com/photo-1547407139-3c921a66005c?auto=format&fit=crop&w=400&q=80 400w,
+                                    https://images.unsplash.com/photo-1547407139-3c921a66005c?auto=format&fit=crop&w=800&q=90 800w
+                                "
+                                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                                class="card-img-top"
+                                alt="Kodi, an adventurous Husky">
+
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h3 class="card-title">Kodi</h3>
+                                    <span class="dog-gender">MALE</span>
+                                </div>
+
+                                <p class="card-text">
+                                    Energetic, intelligent and always ready for his next adventure.
+                                </p>
+
+                                <div class="mb-3">
+                                    <span class="badge">Husky</span>
+                                    <span class="badge">Adult</span>
+                                    <span class="badge">Large</span>
+                                </div>
+
+                                <button class="btn btn-dark w-100 mt-auto meet-button"
+                                    type="button"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#dogModal"
+                                    data-name="Kodi"
+                                    data-description="Kodi is energetic, intelligent and always ready for his next adventure."
+                                    data-image="https://images.unsplash.com/photo-1547407139-3c921a66005c?auto=format&fit=crop&w=1200&q=90">
+                                    Meet Kodi
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+
+
+                    <!-- ROCKY -->
+                    <div class="col-12 col-md-6 col-lg-4 dog-item"
+                        data-name="rocky"
+                        data-breed="german"
+                        data-age="adult"
+                        data-size="large">
+
+                        <article class="card dog-card h-100">
+                            <img
+                                src="https://images.unsplash.com/photo-1568572933382-74d440642117?auto=format&fit=crop&w=800&q=90"
+                                srcset="
+                                    https://images.unsplash.com/photo-1568572933382-74d440642117?auto=format&fit=crop&w=400&q=80 400w,
+                                    https://images.unsplash.com/photo-1568572933382-74d440642117?auto=format&fit=crop&w=800&q=90 800w
+                                "
+                                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                                class="card-img-top"
+                                alt="Rocky, a loyal German Shepherd">
+
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h3 class="card-title">Rocky</h3>
+                                    <span class="dog-gender">MALE</span>
+                                </div>
+
+                                <p class="card-text">
+                                    Loyal, intelligent and looking for a family he can call his own.
+                                </p>
+
+                                <div class="mb-3">
+                                    <span class="badge">German Shepherd</span>
+                                    <span class="badge">Adult</span>
+                                    <span class="badge">Large</span>
+                                </div>
+
+                                <button class="btn btn-dark w-100 mt-auto meet-button"
+                                    type="button"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#dogModal"
+                                    data-name="Rocky"
+                                    data-description="Rocky is loyal, intelligent and looking for a family he can call his own."
+                                    data-image="https://images.unsplash.com/photo-1568572933382-74d440642117?auto=format&fit=crop&w=1200&q=90">
+                                    Meet Rocky
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+
+                <div id="noResults" class="text-center py-5 d-none">
+                    <h2>No dogs found</h2>
+                    <p>Try changing your search filters.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- SECTION 4: ADOPTION INFO -->
+        <section class="how-it-works py-5 py-lg-6">
+            <div class="container">
+
+                <div class="row justify-content-center text-center">
+                    <div class="col-12 col-lg-8">
+
+                        <p class="eyebrow">ADOPTION JOURNEY</p>
+
+                        <h2 class="display-5 fw-bold">
+                            One Small Step Can Change a Life.
+                        </h2>
+
+                        <p class="mt-3">
+                            Browse our dogs, learn about their personalities and
+                            take the first step toward finding a new companion.
+                        </p>
+
+                        <a href="about.html" class="btn btn-outline-dark mt-3">
+                            Learn About Pawsite Future
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- DOG MODAL -->
+    <div class="modal fade" id="dogModal" tabindex="-1"
+        aria-labelledby="modalName" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h2 class="modal-title fs-4" id="modalName">Dog</h2>
+
+                    <button type="button" class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <img id="modalImage"
+                        src=""
+                        class="img-fluid rounded mb-3"
+                        alt="Selected dog">
+
+                    <p id="modalDescription"></p>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-outline-dark"
+                        data-bs-dismiss="modal">
+                        Close
+                    </button>
+
+                    <button type="button" class="btn btn-primary"
+                        id="contactButton">
+                        Contact Adoption Team
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6">
+                    <h2 class="footer-brand">
+                        <i class="fa-solid fa-paw me-2" aria-hidden="true"></i>
+                        Pawsite Future
+                    </h2>
+
+                    <p>
+                        Helping wonderful dogs and loving families find each other.
+                    </p>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <h3>Explore</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="dog.html">Adopt a Dog</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <h3>Follow Us</h3>
+
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <p class="mb-0 text-center">
+                © 2026 Pawsite Future. Every Dog Deserves a Forever Home.
+            </p>
+
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Search and Modal JavaScript -->
+    <script>
+        const searchButton = document.getElementById("searchButton");
+        const dogItems = document.querySelectorAll(".dog-item");
+        const noResults = document.getElementById("noResults");
+
+        searchButton.addEventListener("click", function () {
+            const searchText = document.getElementById("searchInput").value
+                .toLowerCase()
+                .trim();
+
+            const breed = document.getElementById("breedFilter").value;
+            const age = document.getElementById("ageFilter").value;
+            const size = document.getElementById("sizeFilter").value;
+
+            let visible = 0;
+
+            dogItems.forEach(function (item) {
+                const name = item.dataset.name;
+                const dogBreed = item.dataset.breed;
+                const dogAge = item.dataset.age;
+                const dogSize = item.dataset.size;
+
+                const matches =
+                    name.includes(searchText) &&
+                    (breed === "all" || dogBreed === breed) &&
+                    (age === "all" || dogAge === age) &&
+                    (size === "all" || dogSize === size);
+
+                if (matches) {
+                    item.classList.remove("d-none");
+                    visible++;
+                } else {
+                    item.classList.add("d-none");
+                }
+            });
+
+            if (visible === 0) {
+                noResults.classList.remove("d-none");
+            } else {
+                noResults.classList.add("d-none");
+            }
+        });
+
+
+        const dogModal = document.getElementById("dogModal");
+
+        dogModal.addEventListener("show.bs.modal", function (event) {
+            const button = event.relatedTarget;
+
+            const name = button.getAttribute("data-name");
+            const description = button.getAttribute("data-description");
+            const image = button.getAttribute("data-image");
+
+            document.getElementById("modalName").textContent = name;
+            document.getElementById("modalDescription").textContent = description;
+            document.getElementById("modalImage").src = image;
+            document.getElementById("modalImage").alt = name;
+        });
+
+
+        document.getElementById("contactButton").addEventListener("click", function () {
+            alert("Thank you for your interest! The Pawsite Future adoption team will be happy to help.");
+        });
+    </script>
+
+</body>
+</html>
